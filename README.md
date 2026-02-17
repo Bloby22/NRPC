@@ -36,7 +36,7 @@ Netflix (Chrome) → WebSocket → Node.js server → Discord RPC
 ### 1. Klonování repozitáře
 
 ```bash
-git clone https://github.com/tvuj-username/netflix-discord-rpc.git
+git clone https://github.com/bloby22/NRPC.git
 cd netflix-discord-rpc
 ```
 
