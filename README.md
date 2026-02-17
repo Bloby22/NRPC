@@ -123,9 +123,3 @@ Server běží na portu `3000`, WebSocket na portu `3001`.
     "ws": "^8.19.0"
   }
 ```
-
----
-
-## 📄 Licence
-
-MIT
