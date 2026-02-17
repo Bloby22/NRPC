@@ -13,18 +13,6 @@
 
 ---
 
-## ⚙️ Jak to funguje
-
-1. **Chrome rozšíření** (`content.js`) sleduje přehrávač Netflixu a odesílá data přes WebSocket
-2. **Node.js server** přijímá data a předává je Discord RPC
-3. **Discord** zobrazuje stav ve tvém profilu
-
-```
-Netflix (Chrome) → WebSocket → Node.js server → Discord RPC
-```
-
----
-
 ## 🚀 Instalace
 
 ### Požadavky
