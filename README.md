@@ -60,28 +60,6 @@ node index.js
 
 ---
 
-## 📁 Struktura projektu
-
-```
-netflix-discord-rpc/
-├── index.js                 # Vstupní bod aplikace
-├── RPC/
-│   └── client.js            # Discord RPC klient
-├── Services/
-│   ├── netflix.js           # Handler pro Netflix data
-│   ├── server.js            # HTTP server
-│   └── websocket.js         # WebSocket server
-├── Utils/
-│   └── logger.js            # Logger
-├── extension/
-│   ├── manifest.json        # Chrome rozšíření manifest
-│   ├── content.js           # Content script pro Netflix
-│   └── extractor.js         # Extrakce metadat z přehrávače
-└── logs/                    # Logy aplikace
-```
-
----
-
 ## 🎬 Podporované formáty
 
 | Typ | Příklad titulku | Discord stav |
@@ -89,22 +67,6 @@ netflix-discord-rpc/
 | Seriál | `Stranger Things: S04E09 - The Piggyback` | `S04E09 - The Piggyback` |
 | Díl | `Squid Game: D01 Red Light, Green Light` | `Díl 01 - Red Light, Green Light` |
 | Film | `Inception` | *(pouze název)* |
-
----
-
-## 🛠️ API Endpointy
-
-Server běží na portu `3000`, WebSocket na portu `3001`.
-
-| Metoda | Endpoint | Popis |
-|--------|----------|-------|
-| `GET` | `/ping` | Health check |
-| `GET` | `/status` | Stav serveru a RPC |
-| `POST` | `/update` | Aktualizace aktivity |
-| `POST` | `/pause` | Pozastavení |
-| `POST` | `/resume` | Obnovení |
-| `POST` | `/stop` | Zastavení |
-| `POST` | `/reset` | Reset |
 
 ---
 
