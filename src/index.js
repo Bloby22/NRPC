@@ -8,7 +8,7 @@ const logger = require('./Utils/logger');
 const config = {
   port: 3000,
   wsPort: 3001,
-  client: 'ID_YOUR',
+  client: '1472931378441228308',
   retry: 5000,
   logLevel: 'info'
 };
