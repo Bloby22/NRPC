@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "NRPC",
+    "version": "1.0.6",
+    "description": "Discord RPC with Netflix.",
+    "permissions": [ "activeTab", "storage" ],
+    "host_permissions": [ "https://www.netflix.com/*" ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.netflix.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
