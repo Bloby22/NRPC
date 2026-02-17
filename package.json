@@ -1,5 +1,5 @@
 {
-  "name": "netflix-rpc-bot",
+  "name": "nrpc",
   "version": "1.0.0",
   "description": "mňam discordprc",
   "main": "src/index.js",
