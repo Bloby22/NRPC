@@ -9,12 +9,7 @@
 ---
 
 ## 📺 Ukázka
-
-```
-Sleduje Netflix
-Stranger Things
-S04E09 - The Piggyback         1:15:23 zbývá
-```
+![Discord Status](https://cdn.discordapp.com/attachments/1306144131407675463/1472959313361244171/image.png?ex=69952082&is=6993cf02&hm=ce81277ae4c3b5f1769758cb2a82b154651fe49a99ef87dae0f09de667cb0352&)
 
 ---
 
@@ -51,30 +46,13 @@ cd netflix-discord-rpc
 npm install
 ```
 
-### 3. Discord aplikace
-
-1. Jdi na [Discord Developer Portal](https://discord.com/developers/applications)
-2. Vytvoř novou aplikaci s názvem `Netflix`
-3. Zkopíruj **Client ID**
-4. Do sekce **Rich Presence → Art Assets** nahraj obrázek s názvem `netflix_logo`
-
-### 4. Konfigurace
-
-Otevři `index.js` a nastav své **Client ID**:
-
-```js
-const config = {
-  client: 'TVOJE_CLIENT_ID'
-};
-```
-
-### 5. Spuštění serveru
+### 3. Spuštění serveru
 
 ```bash
 node index.js
 ```
 
-### 6. Chrome rozšíření
+### 4. Chrome rozšíření
 
 1. Otevři Chrome a jdi na `chrome://extensions/`
 2. Zapni **Režim pro vývojáře**
@@ -134,10 +112,16 @@ Server běží na portu `3000`, WebSocket na portu `3001`.
 
 ```json
 {
-  "discord-rpc": "^4.0.1",
-  "express": "^4.18.2",
-  "ws": "^8.14.2"
-}
+    "chalk": "^5.6.2",
+    "dayjs": "^1.11.19",
+    "discord-rpc": "^4.0.1",
+    "dotenv": "^17.3.1",
+    "esbuild": "^0.27.3",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
+    "webpack": "^5.105.2",
+    "ws": "^8.19.0"
+  }
 ```
 
 ---
